@@ -1,10 +1,13 @@
 ﻿namespace bancoPolimorfismo.ConsoleApp
 {
-    public class CuentaBasica : ClaseBase
+    public class Ahorro : ClaseBase
     {
-        public CuentaBasica(decimal saldoM)
+        private const decimal SaldoMinimo = 3000;
+
+        public Ahorro(decimal saldoI)
         {
-            this.Saldo = saldoM;
+            if (saldoI >= SaldoMinimo)
+                this.Saldo = saldoI;
         }
         public new void Depositar(decimal cantidad)
         {

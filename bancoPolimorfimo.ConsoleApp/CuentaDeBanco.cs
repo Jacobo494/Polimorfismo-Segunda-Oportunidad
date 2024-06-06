@@ -1,4 +1,4 @@
-﻿namespace bancoPolimorfimo.ConsoleApp
+﻿namespace bancoPolimorfismo.ConsoleApp
 {
     public interface CuentaDeBanco
     {
